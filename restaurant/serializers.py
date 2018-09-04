@@ -1,9 +1,11 @@
 from .models import *
-from rest_framework import serializers
 from drf_writable_nested import WritableNestedModelSerializer
+from rest_framework import serializers
 
 
 class SecondaryModifierSerializer(serializers.ModelSerializer):
+    '''secondary modifier serializer for serializing the its name'''
+
     secondary_modifier_name = serializers.CharField()
 
     class Meta:
@@ -12,6 +14,8 @@ class SecondaryModifierSerializer(serializers.ModelSerializer):
 
 
 class ModifierSerializer(WritableNestedModelSerializer):
+    '''modifier serializer for serializing the modifier name and its secondary modifiers'''
+
     modifier_name = serializers.CharField()
     secondary_modifier = serializers.SerializerMethodField()
 
@@ -29,6 +33,8 @@ class ModifierSerializer(WritableNestedModelSerializer):
 
 
 class ItemSerializer(WritableNestedModelSerializer):
+    '''item serializer for serializing the item name and its modifiers'''
+
     item_name = serializers.CharField()
     modifier = serializers.SerializerMethodField()
 
@@ -46,6 +52,8 @@ class ItemSerializer(WritableNestedModelSerializer):
 
 
 class RestaurantSerializer(WritableNestedModelSerializer):
+    '''restaurant serializer for serializing the name and item set'''
+
     restaurant_name = serializers.CharField()
     item_set = ItemSerializer(many=True, read_only=True)
 

@@ -129,8 +129,13 @@ class RestaurantSerializer(WritableNestedModelSerializer):
     Initiated 8.31.2018
 
     1. Used Django-Restful-Framework with MYSQL.
-    2. Created Restaurant, Item, Modifier, and SecondaryModifier models.
-    3. Used GET request to communicate with front-end. If there is more time, it can be built with Restful APIs.
+    2. Created Restaurant, Item, Modifier, and SecondaryModifier models. Restaurant and Item models can be manytomany
+    because there could be one restaurant have many items and one same item can appear in different restaurant. This
+    can somehow reduce the repeatable data.
+    3. Used GET request to communicate with front-end. If there is more time, it can also have full sets of RESTful APIs.
+    However I managed to put Django admin to adding or updating the data through Django admin site.
+    4. Scalability wise, we can add extra fields for restaurant, item and etc easily. The api has been tested by the
+    Jmeter with 100 users at same time and 10 loops for local environment requests.
 
 
 ## Requirements:
