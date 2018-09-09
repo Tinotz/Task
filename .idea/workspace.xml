@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffb320de-bc49-4fe3-a25d-3eaaa531f633" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant/models.py" afterPath="$PROJECT_DIR$/restaurant/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant/serializers.py" afterPath="$PROJECT_DIR$/restaurant/serializers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant/urls.py" afterPath="$PROJECT_DIR$/restaurant/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant/views.py" afterPath="$PROJECT_DIR$/restaurant/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +34,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="369">
               <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#638#679#0" expanded="true" />
@@ -47,8 +46,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restaurant/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -56,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/restaurant/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -71,18 +70,30 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restaurant/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-669">
-              <caret line="1" column="61" lean-forward="false" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+            <state relative-caret-position="590">
+              <caret line="103" column="47" lean-forward="true" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="276" column="112" lean-forward="true" selection-start-line="276" selection-start-column="112" selection-end-line="276" selection-end-column="112" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Bbindex/lib/python3.6/site-packages/rest_framework/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state relative-caret-position="241">
+              <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,21 +102,9 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restaurant/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="43" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restaurant/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="52" lean-forward="true" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -126,16 +125,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Task/urls.py" />
-        <option value="$PROJECT_DIR$/restaurant/urls.py" />
         <option value="$PROJECT_DIR$/Task/__init__.py" />
         <option value="$PROJECT_DIR$/restaurant/apps.py" />
         <option value="$PROJECT_DIR$/restaurant/admin.py" />
         <option value="$PROJECT_DIR$/Task/settings.py" />
         <option value="$PROJECT_DIR$/requirments.txt" />
-        <option value="$PROJECT_DIR$/restaurant/views.py" />
-        <option value="$PROJECT_DIR$/restaurant/serializers.py" />
+        <option value="$PROJECT_DIR$/restaurant/urls.py" />
         <option value="$PROJECT_DIR$/restaurant/models.py" />
+        <option value="$PROJECT_DIR$/restaurant/serializers.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/restaurant/views.py" />
       </list>
     </option>
   </component>
@@ -199,11 +198,11 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager" selected="Django server.Task">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -486,7 +485,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24749643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -496,9 +495,9 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3120482" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3120482" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3987952" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -526,7 +525,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -573,7 +572,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -653,7 +654,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -705,38 +708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#638#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restaurant/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Bbindex/lib/python3.6/site-packages/django/core/management/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="404" column="0" lean-forward="false" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Bbindex/lib/python3.6/site-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="490" column="0" lean-forward="false" selection-start-line="490" selection-start-column="0" selection-end-line="490" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,37 +741,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restaurant/views.py">
+    <entry file="file://$PROJECT_DIR$/../Bbindex/lib/python3.6/site-packages/rest_framework/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="492" column="0" lean-forward="false" selection-start-line="492" selection-start-column="0" selection-end-line="492" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restaurant/serializers.py">
+    <entry file="file://$PROJECT_DIR$/../Bbindex/lib/python3.6/site-packages/rest_framework/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-669">
-          <caret line="1" column="61" lean-forward="false" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+        <state relative-caret-position="241">
+          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/restaurant/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#638#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurant/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurant/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="103" column="47" lean-forward="true" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="276" column="112" lean-forward="true" selection-start-line="276" selection-start-column="112" selection-end-line="276" selection-end-column="112" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurant/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

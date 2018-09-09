@@ -43,10 +43,6 @@ def response_404():
 
 
 class ItemList(GenericAPIView):
-    '''
-    :param PK   An Integer
-    :return  Item list of restaurant including item details
-    '''
 
     def get_queryset(self):
         # get restaurant query
@@ -56,6 +52,12 @@ class ItemList(GenericAPIView):
             return Restaurant.objects.filter(id=pk).first()
 
     def get(self, request, PK):
+        '''
+
+        :param request:
+        :param PK: id of restaurant
+        :return: Item list of restaurant including item details
+        '''
         restaurant = self.get_queryset()
 
         # check the existence of restaurant data with different response
@@ -66,3 +68,19 @@ class ItemList(GenericAPIView):
             response = response_404()
 
         return JsonResponse(response, safe=False)
+
+    def post(self, request):
+        '''
+        create restaurant with item, modifier, etc.
+        '''
+        data = request.data
+        serializer = RestaurantSerializer(data=data)
+        serializer.is_valid()
+        restaurant = serializer.save()
+
+        # output the created data for demonstration
+        # restaurant_serializer = RestaurantSerializer(restaurant)
+        # response = response_200(restaurant_serializer.data)
+
+        return JsonResponse(response_200([]), safe=False)
+

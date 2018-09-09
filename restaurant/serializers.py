@@ -12,11 +12,17 @@ class SecondaryModifierSerializer(serializers.ModelSerializer):
         model = SecondaryModifier
         fields = ('secondary_modifier_name',)
 
+    def create(self, validated_data):
+        secondary_modifier = SecondaryModifier.objects.create(**validated_data)
+        return secondary_modifier
 
-class ModifierSerializer(WritableNestedModelSerializer):
+
+class ModifierSerializer(serializers.ModelSerializer):
     '''modifier serializer for serializing the modifier name and its secondary modifiers'''
 
     modifier_name = serializers.CharField()
+    # secondary_modifier = SecondaryModifierSerializer(many=True, read_only=True)
+
     secondary_modifier = serializers.SerializerMethodField()
 
     def get_secondary_modifier(self, obj):
@@ -31,11 +37,24 @@ class ModifierSerializer(WritableNestedModelSerializer):
         model = Modifier
         fields = ('modifier_name', 'secondary_modifier')
 
+    def create(self, validated_data):
+        secondary_modifier_data = self.initial_data.pop('secondary_modifier')
+        modifier = Modifier.objects.create(**validated_data)
 
-class ItemSerializer(WritableNestedModelSerializer):
+        for secondary_modifier in secondary_modifier_data:
+            serializer = SecondaryModifierSerializer(data=secondary_modifier)
+            serializer.is_valid()
+            obj = serializer.save()
+            modifier.secondarymodifier_set.add(obj)
+        return modifier
+
+
+class ItemSerializer(serializers.ModelSerializer):
     '''item serializer for serializing the item name and its modifiers'''
 
     item_name = serializers.CharField()
+    # modifier = ModifierSerializer(many=True, read_only=True)
+
     modifier = serializers.SerializerMethodField()
 
     def get_modifier(self, obj):
@@ -50,8 +69,19 @@ class ItemSerializer(WritableNestedModelSerializer):
         model = Item
         fields = ('item_name', 'modifier')
 
+    def create(self, validated_data):
+        modifier_data = self.initial_data.pop('modifier')
+        item = Item.objects.create(**validated_data)
 
-class RestaurantSerializer(WritableNestedModelSerializer):
+        for modifier in modifier_data:
+            serializer = ModifierSerializer(data=modifier)
+            serializer.is_valid()
+            obj = serializer.save()
+            item.modifier_set.add(obj)
+        return item
+
+
+class RestaurantSerializer(serializers.ModelSerializer):
     '''restaurant serializer for serializing the name and item set'''
 
     restaurant_name = serializers.CharField()
@@ -59,4 +89,30 @@ class RestaurantSerializer(WritableNestedModelSerializer):
 
     class Meta:
         model = Restaurant
-        fields = ('restaurant_name', 'item_set')
+        fields = ('id', 'restaurant_name', 'item_set')
+
+    def create(self, validated_data):
+        item_data = self.initial_data.pop('item_set')
+        restaurant = Restaurant.objects.create(**validated_data)
+
+        for item in item_data:
+            serializer = ItemSerializer(data=item)
+            serializer.is_valid()
+            obj = serializer.save()
+            restaurant.item_set.add(obj)
+
+        # another way to create the nested data
+
+        # for item in item_data:
+        #     item_obj, created = Item.objects.get_or_create(item_name=item['item_name'])
+        #     restaurant.item_set.add(item_obj)
+        #     modifier_data = item.pop('modifier')
+        #     for modifier in modifier_data:
+        #         modifier_obj, created = Modifier.objects.get_or_create(modifier_name=modifier['modifier_name'])
+        #         item_obj.modifier_set.add(modifier_obj)
+        #         secondary_modifier_data = modifier.pop('secondary_modifier')
+        #         for secondary_modifier in secondary_modifier_data:
+        #             secondary_modifier_obj, created = SecondaryModifier.objects.get_or_create(
+        #                 secondary_modifier_name=secondary_modifier['secondary_modifier_name'])
+
+        return restaurant
